@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        var myFile = $('#fileinput').prop('files');
+        $.ajax({
+        type: "GET" ,
+        url: "../Downloads/Codex_Outbound/parte1/0a549b22-1548-4134-874d-965ec067f147",
+        dataType: "xml" ,
+        success: function(xml) {
+            //var xmlDoc = $.parseXML( xml );   <------------------this line
+            //if single item
+            var person = $(xml).find('Status').text();  
+
+            //but if it's multible items then loop
+            $(xml).find('Status').each(function(){
+            $("#temp").append('<li>' + $(this).text() + '</li>');  
+            }); 
+            },
+        error: function(data){
+            alert(data)
+        }  
+        });
+    });
+})
+
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+<input type="file" id="fileinput" />
+<div id = temp></div>
+
+
+</body>
+</html>

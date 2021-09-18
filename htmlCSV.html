@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var hd;
+	var dt;
+	var dtArray = []
+	var sm;
+    $("button").click(function(){
+        var myFile = $('#fileinput').prop('files');		
+		var FR = new FileReader();
+		FR.readAsText(myFile[0]);
+		  FR.onload = function(data) {
+			var myVar = data.target.result;
+			var mySplit = myVar.split('\n')
+			$.each(mySplit, function(i, d){
+				if(d.search('HD,') == 0){
+					hd = d.toString();
+				}
+				if(d.search('DT,') == 0){
+					dtArray.push(d.toString());
+				}
+				if(d.search('SM,') == 0){
+					sm = d.toString();
+				}
+			})
+			dt = dtArray.join('\n');
+			alert(hd)
+			alert(dt);
+			alert(sm);
+		  }
+    });
+})
+
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+<input type="file" id="fileinput" />
+<div id = temp></div>
+
+
+</body>
+</html>
