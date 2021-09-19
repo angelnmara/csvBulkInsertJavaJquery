@@ -1,0 +1,11 @@
+[18:42:33] Connecting to server "localhost" on document "localhost_master_sa_sqlserver".
+[18:42:33] Connected to server "localhost" on document "localhost_master_sa_sqlserver". Server information: {"serverMajorVersion":15,"serverMinorVersion":0,"serverReleaseVersion":4023,"engineEditionId":4,"serverVersion":"15.0.4023.6","serverLevel":"RTM","serverEdition":"Express Edition (64-bit)","isCloud":false,"azureVersion":0,"osVersion":"Ubuntu 18.04","machineName":"56cf2e602e4f","options":{"clusterEndpoints":[],"isBigDataCluster":false}}
+[19:36:35] Disconnected on document "localhost_master_sa_sqlserver"
+[19:42:00] Connecting to server "localhost" on document "localhost_master_sa_sqlserver".
+[19:42:00] Connected to server "localhost" on document "localhost_master_sa_sqlserver". Server information: {"serverMajorVersion":15,"serverMinorVersion":0,"serverReleaseVersion":4023,"engineEditionId":4,"serverVersion":"15.0.4023.6","serverLevel":"RTM","serverEdition":"Express Edition (64-bit)","isCloud":false,"azureVersion":0,"osVersion":"Ubuntu 18.04","machineName":"56cf2e602e4f","options":{"clusterEndpoints":[],"isBigDataCluster":false}}
+[19:42:13] Connecting to server "localhost" on document "untitled:Untitled-1".
+[19:42:13] Connected to server "localhost" on document "untitled:Untitled-1". Server information: {"serverMajorVersion":15,"serverMinorVersion":0,"serverReleaseVersion":4023,"engineEditionId":4,"serverVersion":"15.0.4023.6","serverLevel":"RTM","serverEdition":"Express Edition (64-bit)","isCloud":false,"azureVersion":0,"osVersion":"Ubuntu 18.04","machineName":"56cf2e602e4f","options":{"clusterEndpoints":[],"isBigDataCluster":false}}
+[19:42:48] Started query execution for document "untitled:Untitled-1"
+[19:43:09] Finished query execution for document "untitled:Untitled-1"
+[19:44:58] Disconnected on document "untitled:Untitled-1"
+[19:45:09] Disconnected on document "localhost_master_sa_sqlserver"

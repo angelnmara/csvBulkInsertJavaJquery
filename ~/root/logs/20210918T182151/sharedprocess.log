@@ -1,0 +1,10 @@
+[2021-09-18 18:21:53.606] [sharedprocess] [info] Deleted from disk msjsdiag.vscode-react-native /root/.vscode/extensions/msjsdiag.vscode-react-native-1.4.1
+[2021-09-18 18:21:53.607] [sharedprocess] [info] Deleted from disk burkeholland.simple-react-snippets /root/.vscode/extensions/burkeholland.simple-react-snippets-1.2.3
+[2021-09-18 18:21:56.490] [sharedprocess] [error] [uncaught exception in sharedProcess]: The "path" argument must be of type string. Received type undefined: Error: The "path" argument must be of type string. Received type undefined
+    at b (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:14:14150)
+    at basename (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:14:22386)
+    at r.groupImportantTipsByExe (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:5088)
+    at r.collectTips (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:4567)
+    at async file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:3764
+[2021-09-18 18:22:33.420] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-09-19 16:14:50.271] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
