@@ -15,17 +15,17 @@ public class Detalle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idDetalle;
-    private Long Articulo;
-    private Long Codigo;
-    private String Descripcion;
-    private String Marca;
-    private Long Depto;
-    private Integer CantPedida;
-    private String Medida;
-    private Integer UniEmp;
-    private String PreLista;
-    private Double CostoNeto;
-    private Double ImportePartida;
-    private Integer CantEmpaques;
-    private String TiendaDis;
+    private Long articulo;
+    private Long codigo;
+    private String descripcion;
+    private String marca;
+    private Long depto;
+    private Integer cantPedida;
+    private String medida;
+    private Integer uniEmp;
+    private String preLista;
+    private Double costoNeto;
+    private Double importePartida;
+    private Integer cantEmpaques;
+    private String tiendaDis;
 }
