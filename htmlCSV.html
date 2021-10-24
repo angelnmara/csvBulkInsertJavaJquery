@@ -27,12 +27,60 @@ $(document).ready(function(){
 				}
 			})
 			dt = dtArray.join('\n');
-			alert(hd)
-			alert(dt);
-			alert(sm);
+			insertaHeader(hd)
+			insertaDetalle(dt);
+			insertaFooter(sm);
 		  }
     });
 })
+
+function insertaHeader(hd){
+	var settings = {
+	"url": "http://localhost:8080/bulk-header",
+	"method": "POST",
+	"timeout": 0,
+	"headers": {
+		"Content-Type": "text/plain"
+	},
+	"data": hd,
+	};
+
+	$.ajax(settings).done(function (response) {
+	console.log(response);
+	});
+}
+
+function insertaDetalle(dt){
+	var settings = {
+	"url": "http://localhost:8080/bulk-detalle",
+	"method": "POST",
+	"timeout": 0,
+	"headers": {
+		"Content-Type": "text/plain"
+	},
+	"data": dt,
+	};
+
+	$.ajax(settings).done(function (response) {
+	console.log(response);
+	});
+}
+
+function insertaFooter(sm){
+	var settings = {
+	"url": "http://localhost:8080/bulk-footer",
+	"method": "POST",
+	"timeout": 0,
+	"headers": {
+		"Content-Type": "text/plain"
+	},
+	"data": sm,
+	};
+
+	$.ajax(settings).done(function (response) {
+	console.log(response);
+	});
+}
 
 </script>
 </head>

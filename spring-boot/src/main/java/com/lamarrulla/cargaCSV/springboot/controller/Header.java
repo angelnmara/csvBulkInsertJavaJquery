@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Header {
-    static final Logger logger = LogManager.getLogger(Detalle.class.getName());
+    static final Logger logger = LogManager.getLogger(Header.class.getName());
     private final IHeaderService iHeaderService;
 
     public Header(IHeaderService iHeaderService) {

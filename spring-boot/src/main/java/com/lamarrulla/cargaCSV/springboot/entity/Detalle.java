@@ -15,8 +15,8 @@ public class Detalle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idDetalle;
-    private Long articulo;
-    private Long codigo;
+    private String articulo;
+    private String codigo;
     private String descripcion;
     private String marca;
     private Long depto;

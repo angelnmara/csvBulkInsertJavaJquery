@@ -41,17 +41,20 @@ public class HeaderServiceImpl implements IHeaderService {
             String headers[] = c.split(",");
             try {
                 Header header = new Header(
-                        Long.parseLong(headers[4]),
-                        new SimpleDateFormat("dd/MM/yyyy").parse(headers[4]),
-                        new SimpleDateFormat("dd/MM/yyyy").parse(headers[4]),
-                        new SimpleDateFormat("dd/MM/yyyy").parse(headers[4]),
-                        Long.parseLong(headers[4]),
-                        headers[4],
-                        Long.parseLong(headers[4]),
-                        headers[4],
-                        Integer.parseInt(headers[4]),
-                        Integer.parseInt(headers[4]),
-                        Integer.parseInt(headers[4])
+                        Long.parseLong(headers[1]),
+                        new SimpleDateFormat("ddMMyyyy").parse(headers[2]),
+                        new SimpleDateFormat("ddMMyyyy").parse(headers[3]),
+                        new SimpleDateFormat("ddMMyyyy").parse(headers[4]),
+                        Long.parseLong(headers[5]),
+                        headers[6],
+                        headers[7],
+                        headers[8],
+                        headers[9],
+                        headers[10],
+                        headers[11],
+                        headers[12],
+                        headers[13],
+                        headers[14]
                 );
                 iHeaderRepository.save(header);
             } catch (ParseException e) {
@@ -72,6 +75,9 @@ public class HeaderServiceImpl implements IHeaderService {
                 headerDTO.getCodProvedor(),
                 headerDTO.getNomProvedor(),
                 headerDTO.getTipoPedido(),
+                headerDTO.getString1(),
+                headerDTO.getString2(),
+                headerDTO.getString3(),
                 headerDTO.getNumInter(),
                 headerDTO.getNumTrans()
         );
@@ -88,6 +94,9 @@ public class HeaderServiceImpl implements IHeaderService {
                 header.getCodProvedor(),
                 header.getNomProvedor(),
                 header.getTipoPedido(),
+                header.getString1(),
+                header.getString2(),
+                header.getString3(),
                 header.getNumInter(),
                 header.getNumTrans()
         );

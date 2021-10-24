@@ -38,10 +38,10 @@ public class FooterServiceImpl implements IFooterService {
         Arrays.stream(row).forEach(c->{
             String footers[] = c.split(",");
             Footer footer = new Footer(
-                    Long.parseLong(footers[4]),
-                    Long.parseLong(footers[4]),
-                    Long.parseLong(footers[4]),
-                    Long.parseLong(footers[4])
+                    Long.parseLong(footers[1]),
+                    Double.parseDouble(footers[2]),
+                    Double.parseDouble(footers[3]),
+                    Double.parseDouble(footers[4])
             );
             iFooterRepository.save(footer);
         });

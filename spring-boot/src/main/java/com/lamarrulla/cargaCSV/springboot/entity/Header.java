@@ -21,9 +21,12 @@ public class Header {
     private Date fechaCan;
     private Long noTienda;
     private String nomTiemda;
-    private Long codProvedor;
+    private String codProvedor;
     private String nomProvedor;
-    private Integer tipoPedido;
-    private Integer numInter;
-    private Integer numTrans;
+    private String tipoPedido;
+    private String String1;
+    private String String2;
+    private String String3;
+    private String numInter;
+    private String numTrans;
 }

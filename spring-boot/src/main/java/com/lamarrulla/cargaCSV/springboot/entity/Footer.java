@@ -15,7 +15,7 @@ public class Footer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idFooter;
-    private Long luno;
-    private Long ldos;
-    private Long total;
+    private Double luno;
+    private Double ldos;
+    private Double total;
 }

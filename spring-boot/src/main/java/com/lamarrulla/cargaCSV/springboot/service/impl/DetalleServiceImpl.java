@@ -37,8 +37,8 @@ public class DetalleServiceImpl implements IDetalleService {
         Arrays.stream(row).forEach(c->{
             String detalles[] = c.split(",");
             Detalle detalle = new Detalle(0L                       //idDetalle
-                    , Long.parseLong(detalles[4])                           //Articulo
-                    , Long.parseLong(detalles[2])                           //Codigo
+                    , detalles[4]                                           //Articulo
+                    , detalles[2]                                           //Codigo
                     , detalles[10]                                           //Descripcion
                     , detalles[12]                                           //Marca
                     , Long.parseLong(detalles[8])                           //Depto
